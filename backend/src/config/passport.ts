@@ -1,7 +1,16 @@
 import passport from "passport";
-import strategy, { Strategy } from "passport-github2";
+import { Strategy } from "passport-github2";
 import userModel from "../Models/UserModel.js";
+import dotenv from "dotenv";
 
+dotenv.config();
+
+
+
+console.log("Passport configuration loaded");
+console.log("GitHub Client ID:", process.env.GITHUB_CLIENT_ID);
+console.log("GitHub Client Secret:", process.env.GITHUB_CLIENT_SECRET);
+console.log("GitHub Callback URL:", process.env.GITHUB_CALLBACK_URL);
 passport.use(new Strategy({
     clientID: process.env.GITHUB_CLIENT_ID!,
     clientSecret: process.env.GITHUB_CLIENT_SECRET!,
