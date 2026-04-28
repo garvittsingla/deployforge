@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/Models/UserModel.ts","./src/config/db.ts","./src/config/passport.ts","./src/routes/auth.ts"],"version":"6.0.3"}
+{"root":["./src/index.ts","./src/models/usermodel.ts","./src/config/db.ts","./src/config/passport.ts","./src/middleware/middle.ts","./src/routes/auth.ts"],"version":"6.0.3"}
