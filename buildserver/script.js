@@ -71,13 +71,7 @@ const mime = require("mime-types");
 
 
 // Create S3 client to communicate with AWS
-const s3Client = new S3Client({
-  region: "ap-southeast-2",
-  credentials: {
-    accessKeyId: "AKIA5VJXPQIRY46URRVE",
-    secretAccessKey: "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",
-  },
-});
+
 // Project id coming from environment variable
 // Each deployment will be stored in a separate folder
 const PROJECT_ID = process.env.PROJECT_ID;
